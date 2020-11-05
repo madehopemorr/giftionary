@@ -6,21 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <form class="form-inline">
-        <input id="search-animal" class="form-control mr-sm-2" type="search" placeholder="Animal" aria-label="Search">
-        <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+    <header>
+        <h1>Need Title Here!</h1>
+    </header>
+    <div class="wrap">
+        <div class="search">
+            <input id="search-animal" type="text" class="searchTerm" placeholder= "Search Animal...">
+            <button id="searchBtn" type= "submit" class="searchButton">Search</button>
 <main>
     <div id="gifs-go-here"></div>
 </main>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script type="text/javascript">
- var animal = $("#search-animal").val().trim()
-
+     
 $("#searchBtn").on("click", function(event){
   $("#gifs-go-here").empty();  
   event.preventDefault();
-
+var animal = $("#search-animal").val().trim()
 //search for gif of animal searched for.
 var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
   animal + "&api_key=dc6zaTOxFJmzC&limit=10";
@@ -39,19 +41,9 @@ $.ajax({
         gifDiv.append(animalImage);
         $("#gifs-go-here").prepend(gifDiv);
     })
- var queryURL2 = "https://https://api.gbif.org/v1/species/search?q="+ animal +"&rank=GENUS";
-$.ajax({
-    
-    url: queryURL2,
-    method: "GET"
-  })
-    .then(function(response) {
-        console.log(response)
-    
-    })
   });
+
 
 </script>
 </body>
 </html>
-Giphy API Call
