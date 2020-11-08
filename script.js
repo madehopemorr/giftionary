@@ -35,6 +35,7 @@ $("#searchBtn").on("click", function(event){
           var defText = $(`<p>${definition}</p>`)
           $("#definition").append(defTitle)
           $("#definition").append(defText)
+          
       })
   
     });
