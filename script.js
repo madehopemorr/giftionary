@@ -47,7 +47,7 @@ $("#searchBtn").on("click", function(event){
         .then(function(response) {
             console.log(response)
             var quotes = response.quotes[0]
-            var quoteTitle = $(`<h2>${"Random quote about "+ animal +"'s:"}</h2>`)
+            var quoteTitle = $(`<h2>${"Random quote containing the word: "+ animal +""}</h2>`)
             var quote = $(`<p>${quotes.quoteText}<br>${"By: "+ quotes.quoteAuthor}</p>`)
             $("#quotes-go-here").append(quoteTitle)
             $("#quotes-go-here").append(quote)
