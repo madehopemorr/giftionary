@@ -58,6 +58,7 @@ $("#searchBtn").on("click", function(event){
             console.log(response)
             var quotes = response.quotes[0]
             var quoteTitle = $(`<h2>${"Example of "+ searchWord}</h2>`)
+
             var quote = $(`<p>${quotes.quoteText}<br>${"By: "+ quotes.quoteAuthor}</p>`)
             $("#quotes-go-here").append(quoteTitle)
             $("#quotes-go-here").append(quote)
