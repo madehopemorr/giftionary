@@ -1,5 +1,5 @@
 body{
-    background: #f2f2f2;
+    background: rgb(255, 193, 77);
     font-family: 'Open Sans', sans-serif;
   }
   .search {
@@ -9,24 +9,24 @@ body{
   }
   .searchTerm {
     width: 100%;
-    border: 3px solid #00B4CC;
+    border: 3px solid rgb(194, 145, 153);
     border-right: none;
-    padding: 5px;
-    height: 20px;
+    padding: 10px;
+    height: 7px;
     border-radius: 5px 0 0 5px;
     outline: none;
     color: #9DBFAF;
   }
   .searchTerm:focus{
-    color: #00B4CC;
+    color: rgb(27, 156, 143)
   }
   .searchButton {
     width: 40px;
     height: 36px;
-    border: 1px solid #00B4CC;
-    background: #00B4CC;
+    border: 1px solid  rgb(194, 145, 153);
+    background: rgb(194, 145, 153);
     text-align: center;
-    color: #fff;
+    color: rgb(255, 227, 190);
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
@@ -34,13 +34,25 @@ body{
   .gify-spot {
     width: 300px;
     height: 300px;
-    border: 5px solid green;
+    border: 5px solid teal;
     padding: 0 70px 10px 0;
     position: relative;
   }
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 650px;
+    background: rgb(23, 23, 43)
+  }
+  #gifs-go-here {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+
+  }
+  .w3-container {
+    background: rgb(44, 153, 142)
+  }
+  .google {
+    font-family: 'Playfair Display', serif;
+    color: white
   }
  
  
