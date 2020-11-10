@@ -3,20 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dictionary</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous"
-  />
 </head>
 <body>
     <!-- Sidebar -->
-<!--saved for futures. currently no API
 <div class="w3-sidebar w3-light-grey w3-bar-block sidebar" style="width:20%">
     <h2 class="w3-bar-item">Animaliadex</h2>
     <a href="#" class="w3-bar-item w3-button">Phylum</a>
@@ -26,17 +18,18 @@
     <a href="#" class="w3-bar-item w3-button">Family</a>
     <a href="#" class="w3-bar-item w3-button">Genus</a>
     <a href="#" class="w3-bar-item w3-button">Species</a>
-</div>-->
+</div>
   
   <!-- Page Content -->
-  <div style="margin-bottom:2%">
+  <div style="margin-left:20%">
 
-    <div class="w3-container w3-turquoise" style="height:200%">
-        <h2 class=google >Search Animal</h2>
+    <div class="w3-container w3-black" style="height:200%">
+        <h2>Search Animal</h2>
         
         <div class="search">
-            <input id="search-animal" type="text" class="searchTerm" style="padding: 20px" placeholder="type animal here...">
-            <button id="searchBtn" type="submit" class="searchButton">
+            <input type="text" class="searchTerm" style="padding: 20px" placeholder="type animal here...">
+            <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
             </button>
         </div>
     </div>  
@@ -44,15 +37,12 @@
 
 <br>
   <div class="w3-container" style="padding-left: 300px;">
-  <main>
-      <h1></h1>
-    <div id="gifs-go-here"></div>
-    <div id = "definition"></div>
-    <div id = "quotes-go-here"></div>
-  </main>
+  <h2>Sidebar Navigation Example</h2>
+  <p>The sidebar with is set with "style="width:25%".</p>
+  <p>The left margin of the page content is set to the same value.</p>
   </div>
+  
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
