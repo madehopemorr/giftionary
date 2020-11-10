@@ -1,7 +1,7 @@
 $("#searchBtn").on("click", function(event){
     $("#gifs-go-here").empty();  
     $("#definition").empty();
-    $("quotes-go-here").empty();
+    $("#quotes-go-here").empty();
     event.preventDefault();
   var animal = $("#search-animal").val().trim()
   //search for gif of animal searched for from Giphy API.
@@ -48,7 +48,7 @@ $("#searchBtn").on("click", function(event){
             console.log(response)
             var quotes = response.quotes[0]
             var quoteTitle = $(`<h2>${"Random quote about "+ animal +"'s:"}</h2>`)
-            var quote = $(`<p>${quotes.quoteText}<br>${"By: "+ quotes.quotesAuthor}</p>`)
+            var quote = $(`<p>${quotes.quoteText}<br>${"By: "+ quotes.quoteAuthor}</p>`)
             $("#quotes-go-here").append(quoteTitle)
             $("#quotes-go-here").append(quote)
   
