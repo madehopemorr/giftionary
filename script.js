@@ -9,6 +9,18 @@ $("#searchBtn").on("click", function(event){
   runSearchBar(searchWord);
   renderSearchHistory();
 })
+//runs search when user presses enter
+$('#search-animal').keypress(function(event){
+  var keycode = (event.keyCode ? event.keyCode : event.which);
+  if(keycode == '13'){
+    event.preventDefault();
+    var searchWord = $("#search-animal").val().trim()
+    sideWords.push(searchWord)
+    localStorage.setItem("searched word", searchWord)
+    runSearchBar(searchWord);
+    renderSearchHistory();
+  }
+});
 
   function runSearchBar(searchWord){
     $("#gifs-go-here").empty();  
@@ -42,14 +54,14 @@ $("#searchBtn").on("click", function(event){
           console.log(response)
           var title = response[0].meta.id
           var definition = response[0].shortdef[0]
-          var defTitle = $(`<h2>${title}</h2><br><h3>Definition</h3>`)
+          var defTitle = $(`<h2>${searchWord}</h2><br><h3>Definition</h3>`)
           var defText = $(`<p>${definition}</p>`)
           $("#definition").append(defTitle)
           $("#definition").append(defText)
           
       })
       //Ajax to pull a random quote with the searched word in it
-      var quoteURL = "https://quote-garden.herokuapp.com/api/v2/quotes/" + " " + searchWord + " ?"
+      var quoteURL = "https://quote-garden.herokuapp.com/api/v2/quotes/"+""+ searchWord + " ?"
       $.ajax({
         url: quoteURL,
         method: "GET"
