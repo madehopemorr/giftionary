@@ -1,7 +1,29 @@
 body{
-    background: rgb(255, 193, 77);
+    background: #01ABAA;
     font-family: 'Open Sans', sans-serif;
   }
+
+  .w3-sidebar{
+    background-color:#FEA680!important;
+  }
+  .searchedWord{
+    background-color:#FEA680;
+    color:#FFFEF2;
+  }
+  #gifs-go-here {
+    background-color: #FEDC3D;
+    padding:2rem;
+  }
+  #quotes-go-here{
+    background-color: #FFFEF2;
+    padding: 1rem;
+  }
+  #definition{
+    background-color: black;
+    color: #FFFEF2;
+    padding: 1rem;
+  }
+
   .search {
     width: 100%;
     position: relative;
