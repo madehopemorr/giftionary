@@ -61,7 +61,7 @@ $('#search-animal').keypress(function(event){
           
       })
       //Ajax to pull a random quote with the searched word in it
-      var quoteURL = "https://quote-garden.herokuapp.com/api/v2/quotes/"+""+ searchWord + " ?"
+      var quoteURL = "https://quote-garden.herokuapp.com/api/v2/quotes/ "+ searchWord + " ?"
       $.ajax({
         url: quoteURL,
         method: "GET"
