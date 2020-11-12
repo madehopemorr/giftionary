@@ -74,6 +74,9 @@ $('#search-animal').keypress(function(event){
             var quote = $(`<p>${quotes.quoteText}<br>${"~ "+ quotes.quoteAuthor}</p>`)
             $("#quotes-go-here").append(quoteTitle)
             $("#quotes-go-here").append(quote)
+            if(searchWord === undefined){
+              $("#quotes-go-here").addclass("display: none")
+            }
   
             
         })
@@ -88,7 +91,7 @@ $('#search-animal').keypress(function(event){
 function renderSearchHistory(){
   $("#searchHistory").empty();
   for(var i=0; i <sideWords.length; i++){
-  var pastSearch = $("<button>");
+  var pastSearch = $("<li>");
   pastSearch.addClass("searchedWord")
   pastSearch.attr("data-name", sideWords[i]);
   pastSearch.text(sideWords[i]);
