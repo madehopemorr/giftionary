@@ -36,12 +36,11 @@ $('#search-animal').keypress(function(event){
     .then(function(response) {
         console.log(response)
       var results = response.data[0];
-      var gifDiv = $("<div>");
-          // Creating an image tag
-          var gifImage = $("<img>");
+      // Creating an image tag
+      var gifImage = $("<img class='pure-img'>");
           gifImage.attr("src", results.images.fixed_height.url);
-          gifDiv.append(gifImage);
-          $("#gifs-go-here").prepend(gifDiv);
+
+        $("#gifs-go-here").prepend(gifImage);
       })
   
     var dictionaryURL = "https://dictionaryapi.com/api/v3/references/learners/json/"+ searchWord + "?key=ef3cb261-7a7c-465a-b6f5-4115280961f7"

@@ -5,7 +5,12 @@ body{
 
   .w3-sidebar{
     background-color:#FEA680!important;
+    width:20%;
   }
+  .sidebar-container{
+  margin-left:20%"
+  }
+  
   .searchedWord{
     background-color:#FEA680;
     color:black;
@@ -17,20 +22,20 @@ body{
   img {
     background-color: #FEDC3D;
     padding:2rem 3rem;
-    margin: 15px;
+    width:100%;
     border-radius: 5%;
   }
   #quotes-go-here{
     background-color: #FFFEF2;
     padding: 1rem;
-    margin: 15px;
+    
     border-radius: 5%;
   }
   #definition{
     background-color: black;
     color: #FFFEF2;
     padding: 1rem;
-    margin: 15px;
+    
     border-radius: 5%;
   }
 
@@ -63,35 +68,21 @@ body{
     cursor: pointer;
     font-size: 28px;
   }
-  .gify-spot {
-    width: 300px;
-    height: 300px;
-    border: 5px solid teal;
-    padding: 0 70px 10px 0;
-    position: relative;
-  }
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 650px;
-    background: rgb(23, 23, 43)
-  }
-  /*#gifs-go-here {
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
-  }*/
   .w3-container {
     background: rgb(44, 153, 142)
   }
-  .google {
-    font-family: 'Playfair Display', serif;
-    color: white
-  }
  
- 
-  /*Resize the wrap to see the search bar change!*/
+  /*Resize the wrap to see the search bar change!
   .wrap{
     width: 30%;
     position: absolute;
     top: 10%;
     left: 0%;
     transform: translate(-50%, -50%);
+  }*/
+  
+  @media screen and (max-width: 768px) {
+      .w3-sidebar{
+        display: none;
+      }
   }
