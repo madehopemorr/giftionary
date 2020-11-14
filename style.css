@@ -8,7 +8,7 @@ body{
     width:20%;
   }
   .sidebar-container{
-  margin-left:20%"
+  margin-left:20%;
   }
   
   .searchedWord{
@@ -57,7 +57,7 @@ body{
   .searchTerm:focus{
     color: rgb(27, 156, 143)
   }
-  .searchButton {
+  #searchBtn {
     width: 40px;
     height: 45px;
     border: 1px solid  #FEA680;

@@ -1,10 +1,18 @@
 var sideWords =["Unicorn", "Platypus","Water", "Rainbows"]
 var savedSearch = localStorage.getItem("searched word")
+
+if(localStorage.getItem("initialSearchTerm")){
+  var firstSearch = localStorage.getItem("initialSearchTerm")
+  runSearchBar(firstSearch)
+  sideWords.push(firstSearch.charAt(0).toUpperCase()+firstSearch.slice(1))
+  renderSearchHistory(firstSearch)
+}
+
 //when searching pops up three ajax calls of gif, definition and a random quote
 $("#searchBtn").on("click", function(event){
     event.preventDefault();
-  var searchWord = $("#search-animal").val().trim()
-  sideWords.push(searchWord)
+  var searchWord = $("#search-word").val().trim()
+  sideWords.push(searchWord.charAt(0).toUpperCase()+searchWord.slice(1))
   localStorage.setItem("searched word", searchWord)
   runSearchBar(searchWord);
   renderSearchHistory();
@@ -14,7 +22,7 @@ $('#search-animal').keypress(function(event){
   var keycode = (event.keyCode ? event.keyCode : event.which);
   if(keycode == '13'){
     event.preventDefault();
-    var searchWord = $("#search-animal").val().trim()
+    var searchWord = $("#search-word").val().trim()
     sideWords.push(searchWord)
     localStorage.setItem("searched word", searchWord)
     runSearchBar(searchWord);
