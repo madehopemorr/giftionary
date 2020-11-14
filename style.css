@@ -19,6 +19,14 @@ body{
     padding:5px;
     margin:10px;
   }
+  .main{
+    margin:0 -1em;
+  }
+
+  .pure-g > div{
+    padding: 0 1em;
+  }
+
   img {
     background-color: #FEDC3D;
     padding:2rem 3rem;
