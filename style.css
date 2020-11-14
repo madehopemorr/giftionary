@@ -1,7 +1,39 @@
 body{
-    background: rgb(255, 193, 77);
+    background: #01ABAA;
     font-family: 'Open Sans', sans-serif;
   }
+
+  .w3-sidebar{
+    background-color:#FEA680!important;
+  }
+  .searchedWord{
+    background-color:#FEA680;
+    color:black;
+    border-radius: 5%;
+    border:3px solid black;
+    padding:5px;
+    margin:10px;
+  }
+  img {
+    background-color: #FEDC3D;
+    padding:2rem 3rem;
+    margin: 15px;
+    border-radius: 5%;
+  }
+  #quotes-go-here{
+    background-color: #FFFEF2;
+    padding: 1rem;
+    margin: 15px;
+    border-radius: 5%;
+  }
+  #definition{
+    background-color: black;
+    color: #FFFEF2;
+    padding: 1rem;
+    margin: 15px;
+    border-radius: 5%;
+  }
+
   .search {
     width: 100%;
     position: relative;
@@ -22,14 +54,14 @@ body{
   }
   .searchButton {
     width: 40px;
-    height: 36px;
-    border: 1px solid  rgb(194, 145, 153);
-    background: rgb(194, 145, 153);
+    height: 45px;
+    border: 1px solid  #FEA680;
+    background:#FEA680;
     text-align: center;
     color: rgb(255, 227, 190);
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 28px;
   }
   .gify-spot {
     width: 300px;
@@ -43,10 +75,9 @@ body{
     padding: 650px;
     background: rgb(23, 23, 43)
   }
-  #gifs-go-here {
+  /*#gifs-go-here {
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
-
-  }
+  }*/
   .w3-container {
     background: rgb(44, 153, 142)
   }
