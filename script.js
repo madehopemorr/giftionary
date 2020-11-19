@@ -1,4 +1,7 @@
+
+//starter sidebar words
 var sideWords =["Unicorn", "Platypus","Water", "Rainbows"]
+//pulls previous searches from local storage 
 var savedSearch = localStorage.getItem("searched word")
 
 if(localStorage.getItem("initialSearchTerm")){
@@ -18,7 +21,7 @@ $("#searchBtn").on("click", function(event){
   renderSearchHistory();
 })
 //runs search when user presses enter
-$('#search-animal').keypress(function(event){
+$('#search-word').keypress(function(event){
   var keycode = (event.keyCode ? event.keyCode : event.which);
   if(keycode == '13'){
     event.preventDefault();
@@ -29,7 +32,7 @@ $('#search-animal').keypress(function(event){
     renderSearchHistory();
   }
 });
-
+//3 ajax calls
   function runSearchBar(searchWord){
     $("#gifs-go-here").empty();  
     $("#definition").empty();
@@ -90,10 +93,6 @@ $('#search-animal').keypress(function(event){
   
     }
 
-    //search history
-   
-    //when searches, pulls that input from search and generates info on the city
-
 //builds search history
 function renderSearchHistory(){
   $("#searchHistory").empty();
@@ -105,7 +104,7 @@ function renderSearchHistory(){
   $("#searchHistory").prepend(pastSearch)
 
   } }
-  //if previous searched city is clicked, pulls up data on that city
+  //makes previous searches clickable
 $(document).on("click", ".searchedWord", function(){
   runSearchBar($(this).attr("data-name"));
 } )
