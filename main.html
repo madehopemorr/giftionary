@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giftionary</title>
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
@@ -14,20 +15,21 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin="anonymous"
   />
+  <!--links for favicon-->
   <link rel="apple-touch-icon" sizes="180x180" href="./attributes/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./attributes/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./attributes/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
     <!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block sidebar">
+<aside class="w3-sidebar w3-bar-block sidebar">
     <h2  class="w3-bar-item">Giftionary <i class="fas fa-book-dead"></i>
-
     </h2>
     <ul id="searchHistory" style="list-style-type:none;">
       </ul>
-</div>
+    </aside>
   
   <!-- Page Content -->
   <div class= "sidebar-container">
@@ -44,6 +46,7 @@
 <br>
   <div class="w3-container" style="padding-left: 300px;"></div>
   <main>
+    <!--boxes for each element pulling from ajax calls-->
       <h1></h1>
       <div class="pure-g">
         <div class="pure-u-1 pure-u-md-1-3"> 
